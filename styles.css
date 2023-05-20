@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-image: url('images/background.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ nav {
 }
 
 nav a {
-  color: #333;
+  color: rgba(255, 255, 255, 0.535);
   text-decoration: none;
   font-weight: bold;
   margin-left: 30px;
@@ -53,8 +53,9 @@ nav a:hover {
 }
 
 .hero-img {
-  width: 50%;
-  margin-left: 100px;
+  width: 20%;
+  margin-left: 150px;
+  border-radius: 100%;
 }
 
 .hero-content {
@@ -82,7 +83,7 @@ nav a:hover {
 .cta a {
   padding: 20px 40px;
   background-color: #007bff;
-  color: #fff;
+  color: rgb(77, 73, 73);
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -100,7 +101,7 @@ nav a:hover {
 }
 
 .project {
-  background-color: #fff;
+  background-color: rgb(95, 89, 89);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -142,7 +143,7 @@ nav a:hover {
 }
 
 .contact-form {
-  background-color: #fff;
+  background-color: rgb(87, 83, 83);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   padding: 50px;
