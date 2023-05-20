@@ -19,7 +19,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  margin-left: 100px;
 }
 
 h1 {
@@ -51,7 +50,6 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  margin-left: 100px;
 }
 
 .hero-img {
@@ -68,7 +66,6 @@ nav a:hover {
   font-weight: bold;
   margin: 0 0 30px;
   line-height: 1.2;
-  margin-left: 100px;
 }
 
 .hero-content p {
