@@ -49,11 +49,11 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .hero-img {
   width: 20%;
-  margin-top: 10px;
   margin-left: 150px;
   border-radius: 100%;
 }
