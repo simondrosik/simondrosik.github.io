@@ -2,7 +2,6 @@ body {
   font-family: Georgia, serif;
   color: rgb(255, 255, 255);
   background-image: url('images/background.jpeg');
-  border-image-slice: 30;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,14 +11,14 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 10px;
 }
 
 header {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 0.1%;
   margin-bottom: 1%;
 }
 
