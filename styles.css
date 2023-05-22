@@ -3,6 +3,7 @@ body {
   color: rgb(255, 255, 255);
   background-image: url('images/background.jpeg');
   background-size: 120%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center, 120%;
   background-attachment: fixed;
