@@ -119,7 +119,9 @@ nav a:hover {
 }
 
 .cta {
+  display: flex;
   text-align: center;
+  justify-content: center;
   margin-top: 0.5em;
   margin-left: 0.5em;
 }
