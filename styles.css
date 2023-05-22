@@ -18,13 +18,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 h1 {
   font-size: 2em;
   font-weight: bold;
-  margin: 5%;
+  margin: 2%;
 }
 
 nav {
