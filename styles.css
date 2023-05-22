@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .hero-content {
-  width: 40%;
+  width: 50%;
 }
 
 .hero-content h2 {
@@ -136,8 +136,8 @@ nav a:hover {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  margin-bottom: 10px;
+  grid-gap: 1em;
+  margin-bottom: 5em;
 }
 
 .project {
