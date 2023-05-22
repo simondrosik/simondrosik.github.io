@@ -2,7 +2,7 @@ body {
   font-family: Georgia, serif;
   color: rgb(255, 255, 255);
   background-image: url('images/background.jpeg');
-  width: 90%;
+  background-position-x: 90%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
