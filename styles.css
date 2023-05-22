@@ -78,6 +78,8 @@ nav a:hover {
   font-size: 1.1em;
   justify-content: center;
   margin-right: 50px;
+  padding: 10px;
+  margin: 20px;
 }
 
 .hero {
