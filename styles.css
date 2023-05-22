@@ -4,7 +4,7 @@ body {
   background-image: url('images/background.jpeg');
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center, 90%;
   background-attachment: fixed;
 }
 
