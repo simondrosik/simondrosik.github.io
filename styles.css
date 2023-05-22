@@ -49,26 +49,16 @@ nav a {
 
 /* Media Query pour les petits écrans */
 @media (max-width: 767px) {
-  header {
-    bottom: 0;
-    top: auto;
-  }
-  
   nav {
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
     height: 60px;
-    padding: 2em;
-  }
-  
-  ul {
-    flex-direction: row;
-  }
-  
-  li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -170,10 +160,10 @@ nav a:hover {
 }
 
 .project-content a {
-  padding: 10px 20px;
+  padding: 1em 2em;
   background-color: #007bff;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10%;
   font-weight: bold;
   text-decoration: none;
 }
