@@ -4,7 +4,7 @@ body {
   background-image: url('images/background.jpeg');
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: center, 90%;
+  background-position: center, 120%;
   background-attachment: fixed;
 }
 
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 .cta a:hover {
-  background-color: #419bfb;
+  background-color: #225388;
 }
 
 .projects {
