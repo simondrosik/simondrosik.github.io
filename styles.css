@@ -50,7 +50,7 @@ nav a {
 /* Media Query pour les petits écrans */
 @media (max-width: 767px) {
   nav {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -59,6 +59,8 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
   }
 }
 
@@ -175,9 +177,10 @@ nav a:hover {
 .contact-form {
   background-color: rgb(87, 83, 83);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 5px;
-  padding: 50px;
+  border-radius: 10%;
+  padding: 2em;
   text-align: center;
+  padding-bottom: 8em;
 }
 
 .contact-form h2 {
