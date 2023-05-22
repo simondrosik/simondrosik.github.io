@@ -89,6 +89,17 @@ nav a:hover {
   border-radius: 20%;
 }
 
+/* Media Query pour les petits écrans */
+@media (max-width: 1024px) {
+  .hero-img {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 20%;
+  }
+}
+
+
 .hero-content {
   width: 50%;
 }
