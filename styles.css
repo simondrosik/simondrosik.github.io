@@ -19,6 +19,7 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-top: 1%;
   margin-bottom: 1%;
 }
 
