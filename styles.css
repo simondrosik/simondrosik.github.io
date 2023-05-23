@@ -55,8 +55,8 @@ nav a {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 60px;
+    background-color: rgba(0, 0, 0, 0.899);
+    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,25 +83,33 @@ nav a:hover {
 
 .hero-img {
   width: 20%;
-  margin-left: 20%;
   margin-top: 5%;
   border-radius: 20%;
+  margin-left: 0;
 }
 
 /* Media Query pour les petits écrans */
 @media (max-width: 1024px) {
+  .hero {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+  }
   .hero-img {
-    width: 55%;
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 5%;
-    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    width: 30%;
   }
 }
 
 
 .hero-content {
-  width: 50%;
+  width: 100%;
 }
 
 .hero-content h2 {
@@ -113,9 +121,11 @@ nav a:hover {
 }
 
 .hero-content p {
-  font-size: 22px;
+  font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 1em;
+  text-align: justify;
+  font-weight: normal;
 }
 
 .cta {
