@@ -70,7 +70,8 @@ nav a {
   }
 }
 
-@media (max-width: 480px) {
+
+@media (min-aspect-ratio: 16/9) {
   nav {
     display: flex;
     justify-content: center;
