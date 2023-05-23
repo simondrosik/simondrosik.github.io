@@ -71,7 +71,7 @@ nav a {
 }
 
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 9/16) {
   nav {
     display: flex;
     justify-content: center;
