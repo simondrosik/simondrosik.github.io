@@ -71,7 +71,7 @@ nav a {
 }
 
 
-@media (min-aspect-ratio: 9/16) {
+@media (orientation: portrait) {
   nav {
     display: flex;
     justify-content: center;
