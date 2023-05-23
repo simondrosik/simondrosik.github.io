@@ -57,7 +57,7 @@ nav a {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.899);
     height: auto;
     display: flex;
@@ -78,7 +78,7 @@ nav a {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.899);
     height: auto;
     display: flex;
