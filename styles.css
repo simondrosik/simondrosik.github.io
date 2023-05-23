@@ -149,6 +149,12 @@ nav a:hover {
   font-size: 100%;
 }
 
+@media (max-width: 1024px) {
+  .cta a {
+    font-size: 20px;
+  }
+}  
+
 .cta a:hover {
   background-color: #225388;
 }
