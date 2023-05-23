@@ -51,12 +51,15 @@ nav a {
 /* Media Query pour les petits écrans */
 @media (max-width: 1024px) {
   nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.899);
-    height: 30px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
