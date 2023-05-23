@@ -63,7 +63,7 @@ nav a {
     padding: auto;
   }
   nav a {
-    font-size: 150%;
+    font-size: auto;
   }
 }
 
@@ -120,6 +120,7 @@ nav a:hover {
   margin: 0 0 30px;
   padding: 1em;
   line-height: 1.2;
+  text-align: center;
 }
 
 .hero-content p {
