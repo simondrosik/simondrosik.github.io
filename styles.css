@@ -56,14 +56,14 @@ nav a {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.899);
-    height: auto;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: auto;
   }
   nav a {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
