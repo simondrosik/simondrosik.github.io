@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  display: flex;
+  display: fixed;
   justify-content: center;
   align-items: center;
   margin-top: 0.1%;
@@ -30,7 +30,7 @@ h1 {
 }
 
 nav {
-  display: flex;
+  display: fixed;
   justify-content: center;
   align-items: center;
 }
