@@ -141,9 +141,9 @@ nav a:hover {
 }
 
 .projects {
-  display: flow;
+  display: grid;
+  grid-gap: 10%;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
   margin-bottom: 5em;
 }
 
