@@ -57,9 +57,9 @@ nav a {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     background-color: rgba(0, 0, 0, 0.899);
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,9 +78,9 @@ nav a {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     background-color: rgba(0, 0, 0, 0.899);
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
