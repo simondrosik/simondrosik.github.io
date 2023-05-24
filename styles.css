@@ -193,6 +193,7 @@ nav a:hover {
 
 .projects {
   display: grid;
+  place-items: center;
   grid-gap: 5%;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 5em;
