@@ -195,6 +195,7 @@ nav a:hover {
   display: grid;
   text-align: center;
   place-items: center !important;
+  height: 30%;
   grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 5em;
@@ -249,6 +250,7 @@ nav a:hover {
   margin: 10px 0 20px;
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 10%;
 }
 
 .project-content a {
