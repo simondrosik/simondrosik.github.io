@@ -369,6 +369,10 @@ background-color: #0062cc;
   height: 100%;
 }
 
+.heromail {
+  text-align: center;
+}
+
 .heromail a {
   color: #acc9ff;
 }
