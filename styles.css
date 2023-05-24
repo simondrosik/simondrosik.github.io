@@ -176,7 +176,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    text-align: center;
+    width: 30%;
   }
 }
 
