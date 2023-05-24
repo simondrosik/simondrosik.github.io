@@ -358,3 +358,9 @@ background-color: #0062cc;
   justify-content: center;
   text-align: justify;
 }
+
+.pageprojects img {
+  line-height: 2;
+  justify-content: center;
+  text-align: justify;
+}
