@@ -30,6 +30,7 @@ h1 {
 
 @media (orientation: portrait) {
   h1 {
+    display: flex;
     font-size: 3em;
     justify-content: center;
   }
@@ -155,7 +156,7 @@ nav a:hover {
 }
 
 .hero-content p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1em;
   text-align: justify;
