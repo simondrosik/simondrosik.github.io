@@ -87,6 +87,11 @@ nav ul li.has-submenu:hover .submenu {
   display: block;
 }
 
+@media (orientation: portrait) {
+  nav ul li .submenu {
+    bottom: 100%;
+ }
+}
 
 
 /* Media Query pour les petits écrans */
