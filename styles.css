@@ -313,6 +313,16 @@ nav a:hover {
   margin-bottom: 10%;
 }
 
+/* Media Query pour les petits écrans */
+@media (max-width: 1024px) {
+  .project-content p {
+    margin: 10px 0 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 10%;
+  }
+}
+
 .project-content a {
   padding: 1em 2em;
   background-color: #007bff;
