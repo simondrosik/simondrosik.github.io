@@ -26,6 +26,10 @@ header {
 h1 {
   font-size: 2em;
   font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 0.05em solid #419bfb;
+  padding: 1%;
 }
 
 @media (orientation: portrait) {
