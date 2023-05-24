@@ -80,7 +80,7 @@ nav ul li .submenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.898);
 }
 
 nav ul li.has-submenu:hover .submenu {
@@ -93,7 +93,7 @@ nav ul li.has-submenu:hover .submenu {
     position: absolute;
     bottom: 100%;
     left: 0;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.897);
  }
 }
 
