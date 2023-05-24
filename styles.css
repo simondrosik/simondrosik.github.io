@@ -176,7 +176,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    margin-left: 35%;
     width: 30%;
   }
 }
@@ -275,6 +275,26 @@ nav a:hover {
   padding-right:auto;
   padding-top: 5%;
 }
+
+/* Media Query pour les petits écrans */
+@media (max-width: 1024px) {
+  .project-img {
+    justify-content: center;
+    place-items: center;
+    align-self: center !important;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    padding-left: auto;
+    padding-right:auto;
+    padding-top: 5%;
+    width: 50%;
+  }
+}
+
 
 .project-content {
   padding: 2em;
