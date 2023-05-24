@@ -193,7 +193,7 @@ nav a:hover {
 
 .projects {
   display: grid;
-  place-items: center;
+  place-items: center !important;
   grid-gap: 5%;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 5em;
@@ -221,11 +221,15 @@ nav a:hover {
 .project-img {
   display: flex;
   justify-content: center;
+  place-items: center;
+  align-self: center !important;
   align-items: center;
   text-align: center;
   height: 250px;
   object-fit: cover;
   object-position: center;
+  padding: 10%;
+  padding-left: 30%;
 }
 
 .project-content {
