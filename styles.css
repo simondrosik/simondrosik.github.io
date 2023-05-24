@@ -89,15 +89,9 @@ nav ul li.has-submenu:hover .submenu {
 
 @media (orientation: portrait) {
   nav ul li .submenu {
-    display: none;
-    position: absolute;
+    top: auto;
     bottom: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.897);
- }
- nav ul li.has-submenu:hover .submenu {
-  display: block;
-}
+  }
 }
 
 
