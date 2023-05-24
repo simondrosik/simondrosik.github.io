@@ -95,6 +95,9 @@ nav ul li.has-submenu:hover .submenu {
     left: 0;
     background-color: rgba(0, 0, 0, 0.897);
  }
+ nav ul li.has-submenu:hover .submenu {
+  display: block;
+}
 }
 
 
