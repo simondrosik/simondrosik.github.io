@@ -55,6 +55,40 @@ nav a {
   border-radius: 20%;
 }
 
+
+/* Styles pour le menu principal */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Styles pour le sous-menu */
+nav ul li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+nav ul li.has-submenu:hover .submenu {
+  display: block;
+}
+
+
+
 /* Media Query pour les petits écrans */
 @media (max-width: 1024px) {
   nav {
