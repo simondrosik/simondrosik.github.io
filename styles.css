@@ -193,6 +193,7 @@ nav a:hover {
 
 .projects {
   display: grid;
+  text-align: center;
   place-items: center !important;
   grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
@@ -207,7 +208,7 @@ nav a:hover {
     align-items: center;
     width: 100%;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
   }
 }
 
@@ -227,8 +228,10 @@ nav a:hover {
   height: 250px;
   object-fit: cover;
   object-position: center;
-  padding: 10%;
-  padding-left: 30%;
+  margin: 0 auto;
+  padding-left: auto;
+  padding-right:auto;
+  padding-top: 5%;
 }
 
 .project-content {
