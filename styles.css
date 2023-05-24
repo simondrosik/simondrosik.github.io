@@ -354,5 +354,7 @@ background-color: #0062cc;
 }
 
 .pageprojects p {
-  line-height: 1.5;
+  line-height: 2;
+  justify-content: center;
+  text-align: justify;
 }
