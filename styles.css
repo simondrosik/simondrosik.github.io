@@ -321,9 +321,14 @@ nav a:hover {
 @media (max-width: 1024px) {
   .project-content p {
     margin: 10px 0 20px;
-    font-size: 1em;
+    font-size: 2.5em;
     line-height: 1.5;
     margin-bottom: 10%;
+  }
+  .project-content h3 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
   }
 }
 
@@ -334,6 +339,20 @@ nav a:hover {
   border-radius: 10%;
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 1024px) {
+  .project-content a {
+    padding: 1em 2em;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10%;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    margin-bottom: 5%;
+  }
 }
 
 .project-content a:hover {
