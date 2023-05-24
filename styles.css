@@ -352,3 +352,7 @@ cursor: pointer;
 .contact-form button:hover {
 background-color: #0062cc;
 }
+
+.pageprojects {
+  line-height: 1.5;
+}
