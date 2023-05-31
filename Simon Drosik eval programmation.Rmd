@@ -1,0 +1,229 @@
+---
+title: "Emotional expression in music"
+author: "Simon Drosik"
+date: "17/12/2020"
+output: 
+  flexdashboard::flex_dashboard:
+        orientation: columns
+        vertical_layout: scroll
+        theme: bootstrap
+runtime: shiny
+---
+
+<style>                     
+.navbar {
+  background-color:#1bb0d1;
+  border-color:#1b24d1;
+}
+.navbar-brand {
+color:#0b6b5b!important;
+}
+.sidebar {
+color:#3a75c7;
+background-color:#9ed8e6!important;
+}
+.tabset {
+background-color:#9ed8e6!important;
+border-color:lightblue;
+}
+.colored {
+background-color:#9ed8e6!important;
+color:#000000;
+border-color:lightblue;
+}
+body {
+text-align: justify;
+}
+</style> 
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(car)
+library(visreg)
+
+
+mean_emotion_ratings <- read.csv("/Users/Simon/Desktop/M1 SCE/cours/Programmation R/dataverse_files/mean_emotion_ratings.csv")
+
+design_matrix <- read.csv("/Users/Simon/Desktop/M1 SCE/cours/Programmation R/dataverse_files/design_matrix.csv")
+```
+
+
+Présentation {data-icon="fa-chalkboard-teacher"}
+=====================================
+
+column {.colored}
+---------
+
+### **Court résumé de l'étude à l'origine des données** 
+
+Emotional Expression in Music: Contribution, Linearity, and Additivity of Primary Musical Cues. *Eerola, T., Friberg, A., & Bresin, R. (2013).*
+
+L'objectif de cette étude était de définir quels paramètres musicaux influencent les réponses émotionnelles à la musique. Les expérimentateurs ont modifié six paramètres de quatre extraits musicaux différents. Les participants étaient 46. À l'aide d'une échelle de Likert allant de 1 à 7, ils notaient un total de 200 extraits musicaux sur quatre émotions (peur, joie, tristesse, paisibilité). Les résultats de cette étude montraient un effet robuste pour chaque paramètre musical étudié. Les deux paramètres les plus significatifs étaient le mode et le rythme. 
+
+La méthodologie de cette étude est basée sur celle de Bresin & Friberg (2011). Les extraits musicaux utilisés proviennent de l'étude de Vieillard et al. (2008). 
+
+Pour accéder aux données sur le site Harvard Dataverse [cliquez ici](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IFOBRN).
+
+### **Variables** 
+Dans ce projet, 3 variables sont étudiées. 
+
+**Mode** (2 modalités) : *majeur et mineur*. Le mode majeur est habituellement associé à des accords d'une sonorité joyeuse, tandis que le mode mineur est associé à des accords d'une sonorité triste.
+
+**Tempo** (5 modalités) : *1 = 1.2 / 2 = 2 / 3 = 2.8 / 4 = 4.4 / 5 = 6 (notes par seconde)*. 
+
+**Evaluation émotionnelle moyenne** (4 modalités) : *joie, peur, tristesse et paisibilité*.
+
+column {.colored}
+---------
+### **Projet** 
+L'objectif de ce projet était d'analyser les relations de l'évaluation émotionnelle avec le mode et le tempo. Eerola et al. (2013) ont montré que ces 2 paramètres influençaient plus significativement l'évaluation émotionnelle des extraits musicaux. L'outil statistique utilisé était la régression linéaire multiple pour chaque émotion étudiée.
+
+**Hypothèses**
+
+Un effet du mode devrait être observé. Les évaluations de la joie et de la paisibilité devraient être plus élevées pour les musiques en mode majeur. À l'inverse, les évaluations de la tristesse et de la peur devraient être plus élevées pour les musiques en mode mineur.
+
+Un effet du tempo devrait être observé. L'évaluation de la joie devrait être plus élevée lors des tempi rapides. À l'inverse, les évaluations de la paisibilité et de la tristesse devraient être plus élevées lors des tempi lents.
+
+### **Références**
+Eerola, T., Friberg, A., & Bresin, R. (2013). Emotional expression in music: contribution, linearity, and additivity of primary musical cues. Frontiers in psychology, 4, 487.
+
+Bresin, R., & Friberg, A. (2011). Emotion rendering in music: range and characteristic values of seven musical variables. Cortex, 47(9), 1068-1081.
+
+Vieillard, S., Peretz, I., Gosselin, N., Khalfa, S., Gagnon, L., & Bouchard, B. (2008). Happy, sad, scary and peaceful musical excerpts for research on emotions. Cognition & Emotion, 22(4), 720-752.
+
+
+**Analyse émotions musicales** {data-icon="fa-chart-line"}
+=======================
+
+
+```{r}
+#nouveau dataframe avec mode/tempi/émotions
+
+mode_tempi_emo <- data.frame(design_matrix$Mode, design_matrix$Tempo, mean_emotion_ratings$Happy, mean_emotion_ratings$Scary, mean_emotion_ratings$Sad, mean_emotion_ratings$Peaceful)
+names(mode_tempi_emo)[1] <- "MODE"
+names(mode_tempi_emo)[2] <- "TEMPI"
+names(mode_tempi_emo)[3] <- "notes_moyennes_joie"
+names(mode_tempi_emo)[4] <- "notes_moyennes_peur"
+names(mode_tempi_emo)[5] <- "notes_moyennes_triste"
+names(mode_tempi_emo)[6] <- "notes_moyennes_paisible"
+
+
+```
+
+     
+Column {.sidebar data-width=200}
+-----------------------------------------------------------------------
+
+### Choix 
+
+```{r}
+#régression
+# Variables explicatives : MODE, TEMPI
+
+ emotion <- mode_tempi_emo[,3:6]
+
+selectInput('ycol', 'Quelle émotion souhaitez-vous étudier ?', names(emotion))
+
+Emotion_choisie <- reactive({
+  emotion[, c(input$ycol)]
+})
+
+renderPrint({
+  reg <- lm(Emotion_choisie()~TEMPI*MODE, data = mode_tempi_emo)
+})
+  
+textInput(
+  inputId="titre",
+  label = "Choix du titre du graphique :"
+)
+
+
+```
+
+
+
+Column {.tabset} 
+-------------------------------------
+
+
+
+### **Résultat régression linéaire multiple** 
+
+```{r}
+renderPrint({
+      reg <- lm(Emotion_choisie()~TEMPI*MODE, data = mode_tempi_emo)
+      summary(reg)
+      })
+
+```
+
+
+### **Représentation graphique** 
+
+```{r}
+renderPlot({
+  v <- visreg(
+    lm(Emotion_choisie()~TEMPI*MODE, data = mode_tempi_emo), 
+    "TEMPI", 
+    "MODE", overlay=TRUE)
+  plot(v, overlay=TRUE, legend=TRUE,
+       strip.names=c("Mode majeur", "Mode mineur"),
+       sub= input$titre,
+       col=input$couleur
+       )
+})
+
+
+```
+
+Column
+-----------------
+
+### **R² ajusté** {.valueBox}
+
+```{r}
+renderValueBox({
+  if(input$Emotion > 0.5){
+      Mycolor = "lightgreen"
+    } else {
+      Mycolor = "red"
+    }
+    valueBox(input$Emotion, color = Mycolor, icon="fa-calculator")
+})
+```
+
+### **R² ajusté interprété en pourcentage** {.colored}
+
+
+```{r}
+renderGauge(gauge(100 * as.numeric(input$Emotion), min = 0, max = 100, symbol = '%', gaugeSectors(
+  success = c(60, 100), warning = c(30, 59), danger = c(0, 29),  colors = c("green", rgb(0, 1, 0), "#CC664D")
+)))
+```
+
+
+```{r}
+
+radioButtons(
+  inputId = "Emotion",
+  label = "Sélectionnez une émotion",
+  choices = list("Joie" = 0.6647, "Peur" = 0.0877,"Tristesse" = 0.7767, "Paisibilité" = 0.2072 )
+)
+
+```
+
+
+----------
+
+### **Interprétations** 
+
+Ce coefficient de détermination signifie que le modèle de la  régression linéaire détermine `r renderText(100 * as.numeric(input$Emotion))`% de la distribution des notes de l'émotion en fonction du mode et du rythme. De plus, *p* < .05.
+
+Un effet du mode est observé. L'évaluation de la joie est plus élevée pour les musiques en mode majeur. À l'inverse, l'évaluation de la tristesse est plus élevée pour les musiques en mode mineur.
+
+Un effet du tempo est également observé. L'évaluation de la joie est plus élevée lors des tempi rapides. À l'inverse, les évaluations de la paisibilité et de la tristesse sont plus élevées lors des tempi lents.
+
+
+
+
+
