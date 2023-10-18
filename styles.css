@@ -36,7 +36,7 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(180deg); /* Rotation de 180 degrés (demi-tour) */
+    transform: rotate(45deg); /* Rotation de 45 degrés (demi-tour) */
   }
   }
 
