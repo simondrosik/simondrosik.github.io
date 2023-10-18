@@ -46,6 +46,7 @@ h1 {
 }
 
 .logo:hover + .title {
+  display: flex;
   width: auto;
   transition: width 5s;
 }
