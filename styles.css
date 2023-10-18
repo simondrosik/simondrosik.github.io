@@ -33,7 +33,6 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
   padding: 1%;
   white-space: nowrap; /* Évite que le titre se casse sur plusieurs lignes */
   width: fit-content;
