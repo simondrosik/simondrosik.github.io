@@ -23,6 +23,13 @@ header {
   margin-bottom: 1%;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px; /* Ajoutez une marge pour l'écart par rapport aux bords de la page si nécessaire */
+}
+
 h1 {
   font-size: 2em;
   font-weight: bold;
