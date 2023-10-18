@@ -31,7 +31,7 @@ body {
   animation: spin 10s linear infinite;
 }
 
-@keyframes spin-boomerang {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
