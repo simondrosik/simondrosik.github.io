@@ -26,20 +26,6 @@ body {
 
 
 
-.logo {
-  transform: rotate(45deg);
-  animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(45deg); /* Rotation de 45 degrés (demi-tour) */
-  }
-  }
-
 
 h1 {
   display: flex;
