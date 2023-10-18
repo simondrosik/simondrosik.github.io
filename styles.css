@@ -31,9 +31,16 @@ body {
   animation: spin 10s linear infinite;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(45deg); }
+@keyframes spin-boomerang {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg); /* Rotation de 180 degrés (demi-tour) */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotation complète (360 degrés) */
+  }
 }
 
 h1 {
