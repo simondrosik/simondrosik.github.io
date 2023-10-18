@@ -38,15 +38,16 @@ h1 {
 }
 
 .title {
+  display: none;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  transition: width 1s;
+  transition: width 5s;
 }
 
 .logo:hover + .title {
   width: auto;
-  transition: width 1s;
+  transition: width 5s;
 }
 
 
