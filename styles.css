@@ -38,6 +38,12 @@ h1 {
   padding: 1%;
   white-space: nowrap; /* Évite que le titre se casse sur plusieurs lignes */
   width: fit-content;
+  animation: typing 3s steps(12) forwards;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
 }
 
 @media (orientation: portrait) {
