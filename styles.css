@@ -25,9 +25,7 @@ body {
 }
 
 .logo {
-  top: 0;
-  left: 0;
-  margin: 20px; 
+  /* Styles spécifiques pour le logo */
 }
 
 h1 {
