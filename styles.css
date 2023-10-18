@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  display: inline;
+  display: block;
   justify-content: space-between;
   align-items: center;
   margin-top: 0.1%;
@@ -28,7 +28,7 @@ body {
 
 
 h1 {
-  display: flex;
+  display: block;
   font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -37,24 +37,13 @@ h1 {
   width: fit-content;
 }
 
-.title {
-  display: none;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  transition: width 5s;
-}
 
-.logo:hover + .title {
-  display: flex;
-  width: auto;
-  transition: width 5s;
-}
+
 
 
 @media (orientation: portrait) {
   h1 {
-    display: flex;
+    display: block;
     font-size: 3em;
     justify-content: center;
   }
