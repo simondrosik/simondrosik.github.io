@@ -37,6 +37,7 @@ h1 {
   background-color: rgb(0, 0, 0);
   border: 0.05em solid #0766ff;
   padding: 1%;
+  width: fit-content;
 }
 
 @media (orientation: portrait) {
