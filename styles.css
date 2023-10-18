@@ -15,12 +15,13 @@ body {
   margin-bottom: 7em;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 0.1%;
   margin-bottom: 1%;
+  padding: 20px; 
 }
 
 .logo {
