@@ -37,6 +37,18 @@ h1 {
   width: fit-content;
 }
 
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  transition: width 1s;
+}
+
+.logo:hover + .title {
+  width: auto;
+  transition: width 1s;
+}
+
 
 @media (orientation: portrait) {
   h1 {
