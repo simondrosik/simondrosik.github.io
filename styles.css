@@ -38,10 +38,8 @@ body {
   50% {
     transform: rotate(180deg); /* Rotation de 180 degrés (demi-tour) */
   }
-  100% {
-    transform: rotate(360deg); /* Rotation complète (360 degrés) */
   }
-}
+
 
 h1 {
   display: flex;
