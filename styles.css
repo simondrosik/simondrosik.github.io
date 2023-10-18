@@ -28,7 +28,7 @@ body {
 
 .logo {
   transform: rotate(45deg);
-  animation: spin 3s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
