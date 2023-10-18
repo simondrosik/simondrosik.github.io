@@ -27,7 +27,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 20px; /* Ajoutez une marge pour l'écart par rapport aux bords de la page si nécessaire */
+  margin: 20px; 
 }
 
 h1 {
