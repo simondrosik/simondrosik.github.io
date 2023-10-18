@@ -34,11 +34,10 @@ h1 {
   font-weight: bold;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
-  border: 0.05em solid #0766ff;
   padding: 1%;
   white-space: nowrap; /* Évite que le titre se casse sur plusieurs lignes */
   width: fit-content;
-  animation: typing 3s steps(12) forwards;
+  animation: typing 5s steps(25) forwards;
 }
 
 @keyframes typing {
