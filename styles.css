@@ -83,6 +83,10 @@ h1 {
   text-align: center;
 }
 
+.titre-section {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: center;
