@@ -302,6 +302,7 @@ nav a:hover {
   padding: 20px 40px;
   background-color: #0766ff;
   color: rgb(255, 255, 255);
+  border: 2px;
   border-color: rgba(0, 0, 0, 0.9);
   border-radius: 5px;
   font-weight: bold;
