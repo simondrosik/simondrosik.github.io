@@ -56,8 +56,8 @@ h1 {
 
 
 .word-cloud {
-  display: flex;
-  margin: 20px;
+  display: inline-block;
+  margin: 20px auto;
   border: 1px solid #ccc;
   padding: 10px;
   background-color: rgba(95, 89, 89, 0.605);
