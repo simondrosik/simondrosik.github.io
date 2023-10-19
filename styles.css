@@ -543,6 +543,6 @@ background-color: #0062cc;
 }
 
 .flyers {
-  width: 30%; /* Réduisez la largeur à 50% de la taille d'origine */
+  width: 10%; /* Réduisez la largeur à 50% de la taille d'origine */
   height: auto; /* Maintenez le rapport hauteur/largeur d'origine */
 }
