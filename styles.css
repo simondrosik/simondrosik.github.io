@@ -73,6 +73,12 @@ p{
   transform: scale(1.2); /* Zoom au survol */
 }
 
+@media (orientation: portrait) {
+  .word-cloud:hover {
+    transform: scale(1); /* Zoom au survol */
+  }
+}
+
 .word-cloud h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
