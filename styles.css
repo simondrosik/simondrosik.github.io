@@ -361,6 +361,7 @@ nav a:hover {
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s;
+  height: fit-content;
 }
 
 
