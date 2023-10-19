@@ -286,15 +286,14 @@ nav a:hover {
 }
 
 .projects {
-  display: flex; /* Utilisez display: flex; */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 30%;
+  display: grid; /* Utilisez display: grid; */
+  text-align: center; /* Centre horizontalement */
   grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 5em;
   width: fit-content;
 }
+
 /* Media Query pour les petits écrans */
 @media (max-width: 1024px) {
   .projects {
