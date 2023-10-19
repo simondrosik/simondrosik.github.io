@@ -103,6 +103,7 @@ p{
   margin: 2em;
   justify-content: center;
   text-align: center;
+  white-space: nowrap;
 }
 
 .word-cloud h2 i {
