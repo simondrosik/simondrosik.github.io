@@ -72,6 +72,9 @@ p{
   transition: transform 0.3s;
   height: 120%;
 }
+
+
+
 .word-cloud:hover {
   transform: scale(1.2); /* Zoom au survol */
 }
@@ -79,6 +82,9 @@ p{
 @media (orientation: portrait) {
   .word-cloud:hover {
     transform: scale(1); /* Zoom au survol */
+  }
+  .word-cloud {
+    height: max-content;
   }
 }
 
