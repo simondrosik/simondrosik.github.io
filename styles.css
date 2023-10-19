@@ -36,8 +36,11 @@ h1 {
   width: fit-content;
 }
 
-
-
+p{
+  background-color: rgba(95, 89, 89, 0.605);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
 
 
 @media (orientation: portrait) {
