@@ -53,11 +53,36 @@ h1 {
   line-height: 1.5;   /* Ajustez la valeur selon vos préférences */
 }
 
+
+
+.word-cloud {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.word-cloud h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.word-cloud span {
+  background-color: #0766ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px;
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 nav a {
   color: rgb(255, 255, 255);
