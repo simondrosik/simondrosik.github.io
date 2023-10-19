@@ -288,6 +288,8 @@ nav a:hover {
   display: block;
   text-align: center;
   place-items: center !important;
+  justify-content: center;
+  align-items: center;
   height: 30%;
   grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
