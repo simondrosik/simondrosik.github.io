@@ -56,7 +56,7 @@ h1 {
 
 
 .word-cloud {
-  display: inline-block;
+  display: flex;
   margin: 20px;
   border: 1px solid #ccc;
   padding: 10px;
