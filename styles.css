@@ -441,6 +441,11 @@ nav a:hover {
   background-color: #0062cc;
 }
 
+.project-content p {
+  text-align: center;
+  justify-content: center;
+}
+
 .contact-form {
   background-color: rgb(87, 83, 83);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
