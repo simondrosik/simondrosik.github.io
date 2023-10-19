@@ -91,7 +91,7 @@ p{
 .word-cloud span {
   background-color: #0766ff;
   color: white;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 5px;
   font-size: 1em;
   margin: 2em;
