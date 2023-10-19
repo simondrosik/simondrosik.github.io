@@ -37,7 +37,7 @@ h1 {
   width: fit-content;
 }
 
-.back h2 {
+h2.back {
   background-color: rgba(0, 0, 0, 0.7);
   width: fit-content;
 }
