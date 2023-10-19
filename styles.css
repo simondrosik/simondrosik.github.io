@@ -285,7 +285,7 @@ nav a:hover {
 }
 
 .projects {
-  display: grid;
+  display: inline-block;
   text-align: center;
   place-items: center !important;
   height: 30%;
