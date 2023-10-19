@@ -42,6 +42,7 @@ h2.back {
   width: fit-content;
   text-align: center;
   justify-content: center;
+  padding: 0.4em;
 }
 
 p{
