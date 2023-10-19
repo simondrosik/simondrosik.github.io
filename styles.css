@@ -70,6 +70,7 @@ p{
   text-align: center;
   width: fit-content;
   transition: transform 0.3s;
+  height: fit-content;
 }
 .word-cloud:hover {
   transform: scale(1.2); /* Zoom au survol */
