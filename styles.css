@@ -338,6 +338,12 @@ nav a:hover {
   transform: scale(1.2); /* Zoom au survol */
 }
 
+@media (orientation: portrait) {
+  .project:hover {
+    transform: scale(1); /* Zoom au survol */
+  }
+}
+
 .project-img {
   justify-content: center;
   place-items: center;
