@@ -294,6 +294,7 @@ nav a:hover {
   grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 5em;
+  width: fit-content;
 }
 
 /* Media Query pour les petits écrans */
