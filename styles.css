@@ -90,10 +90,10 @@ p{
 .word-cloud span {
   background-color: #0766ff;
   color: white;
-  padding: 5px 5px;
+  padding: 1em;
   border-radius: 5px;
   font-size: 1em;
-  margin: 5px;
+  margin: 2em;
   justify-content: center;
   text-align: center;
 }
