@@ -87,6 +87,10 @@ h1 {
   text-align: center;
 }
 
+.word-cloud h2 i {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
 .titre-section {
   text-align: center;
   justify-content: center;
@@ -318,6 +322,8 @@ nav a:hover {
   overflow: hidden;
   transition: transform 0.3s;
 }
+
+
 .project:hover {
   transform: scale(1.2); /* Zoom au survol */
 }
