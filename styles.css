@@ -44,6 +44,15 @@ h2.back {
   padding: 0.4em;
 }
 
+@media (orientation: portrait) {
+  h2.back {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 0.4em;
+  }
+}
+
 p{
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
