@@ -40,6 +40,8 @@ h1 {
 h2.back {
   background-color: rgba(0, 0, 0, 0.7);
   width: fit-content;
+  text-align: center;
+  justify-content: center;
 }
 
 p{
