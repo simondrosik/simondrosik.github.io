@@ -84,7 +84,7 @@ p{
     transform: scale(1); /* Zoom au survol */
   }
   .word-cloud {
-    height: max-content;
+    height: 200%;
   }
 }
 
