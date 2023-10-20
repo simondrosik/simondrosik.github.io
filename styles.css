@@ -85,6 +85,13 @@ p{
   line-height: 1.5;   /* Ajustez la valeur selon vos préférences */
 }
 
+@media (orientation: portrait) {
+  .presentation {
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+  }
+}
 
 
 .word-cloud {
