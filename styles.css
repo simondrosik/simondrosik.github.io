@@ -43,6 +43,7 @@ h2.back {
   text-align: center;
   padding: 0.4vw;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 @media (orientation: portrait) {
