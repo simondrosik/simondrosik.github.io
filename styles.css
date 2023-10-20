@@ -326,7 +326,7 @@ nav a:hover {
 
 
 .hero-content {
-  width: 100%;
+  width: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
