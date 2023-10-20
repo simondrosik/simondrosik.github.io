@@ -64,9 +64,12 @@ p{
 
 @media (orientation: portrait) {
   h1 {
-    display: block;
+    display: none;
     font-size: 3em;
     justify-content: center;
+  }
+  h2 {
+    font-size: 2em;
   }
 }
 
