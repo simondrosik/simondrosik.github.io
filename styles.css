@@ -584,7 +584,7 @@ nav i.fa-solid {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
   padding-right: 1em;
 }
-i.hero-content {
+.hero-content i {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
   padding-right: 1em;
 }
