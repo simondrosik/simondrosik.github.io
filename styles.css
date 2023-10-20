@@ -545,4 +545,5 @@ background-color: #0062cc;
 img.flyers {
   width: 10%; /* Réduisez la largeur à 50% de la taille d'origine */
   height: 10%; /* Maintenez le rapport hauteur/largeur d'origine */
+  margin: 2em;
 }
