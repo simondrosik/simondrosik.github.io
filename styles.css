@@ -115,21 +115,37 @@ p{
 }
 
 .word-cloud h2 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 10px;
   padding: 10px;
 }
+
+@media (orientation: portrait) {
+  .word-cloud h2 {
+    font-size: 1.5em;
+  }
+}
+
 
 .word-cloud span {
   background-color: #0766ff;
   color: white;
   padding: 0.5em;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 2em;
   justify-content: center;
   text-align: center;
   white-space: nowrap;
+}
+
+@media (orientation: portrait) {
+  .word-cloud h2 {
+    font-size: 1.5em;
+  }
+  .word-cloud span {
+    font-size: 1.5em;
+  }
 }
 
 .word-cloud h2 i {
