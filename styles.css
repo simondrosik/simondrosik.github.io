@@ -562,7 +562,7 @@ img.flyers {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
   padding-right: 1em;
 }
-.nav i {
+i.nav {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
   padding-right: 1em;
 }
