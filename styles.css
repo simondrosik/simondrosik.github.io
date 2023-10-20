@@ -353,6 +353,7 @@ nav a:hover {
   .hero-content p {
     font-size: 2em;
     text-align: center;
+    margin: 1em auto;
   }
 }
 
