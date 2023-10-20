@@ -327,6 +327,20 @@ nav a:hover {
   font-weight: normal;
 }
 
+@media (orientation: portrait) {  
+  .hero-content h2 {
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .hero-content p {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
 .cta {
   display: flex;
   text-align: center;
