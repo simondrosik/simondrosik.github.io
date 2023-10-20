@@ -554,3 +554,8 @@ img.flyers {
   height: 30%; /* Maintenez le rapport hauteur/largeur d'origine */
   margin: 2em;
 }
+
+.heromail p a i {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+  padding-right: 1em;
+}
