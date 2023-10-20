@@ -103,6 +103,12 @@ p{
   .word-cloud {
     height: 200%;
   }
+  .word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .word-cloud h2 {
