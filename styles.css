@@ -418,6 +418,9 @@ nav a:hover {
   .project:hover {
     transform: scale(1); /* Zoom au survol */
   }
+  .project {
+    margin-bottom: 10%;
+  }
 }
 
 .project-img {
