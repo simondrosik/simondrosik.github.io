@@ -38,7 +38,7 @@ h1 {
 }
 
 h2.back {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   width: fit-content;
   text-align: center;
   padding: 0.4vw;
@@ -46,7 +46,7 @@ h2.back {
 
 @media (orientation: portrait) {
   h2.back {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     text-align: center;
     padding: 0.4em;
@@ -55,7 +55,7 @@ h2.back {
 
 p{
   display: flex;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   padding: 1em;
@@ -86,7 +86,7 @@ p{
   margin: 20px auto;
   border: 1px solid #ccc;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   text-align: center;
   width: fit-content;
@@ -395,7 +395,7 @@ nav a:hover {
 }
 
 .project {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   overflow: hidden;
