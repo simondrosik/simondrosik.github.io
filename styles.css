@@ -164,6 +164,7 @@ p{
   }
   .word-cloud span {
     font-size: 2em;
+    margin: 0.5 auto;
   }
 }
 
