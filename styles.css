@@ -277,6 +277,7 @@ nav ul li.has-submenu:hover .submenu {
     justify-content: center;
     align-items: center;
     padding: auto;
+    z-index: 1000;
   }
   nav a {
     font-size: 30;
