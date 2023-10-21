@@ -623,3 +623,8 @@ nav i.fa-solid {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
   padding-right: 1em;
 }
+@media (orientation: portait) {
+  .phone {
+    pointer-events: none;
+  }
+}
